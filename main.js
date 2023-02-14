@@ -123,7 +123,7 @@ function clearTmp() {
 }
 
 const hehe = async (jid, options) => {
-  let wm = 'Amelia-MD';
+  let wm = 'DaeMon-MD';
   let gambar = 'https://telegra.ph/file/2d06f0936842064f6b3bb.png';
   try {
     gambar = await conn.profilePictureUrl(jid, 'image');
@@ -147,7 +147,7 @@ const hehe = async (jid, options) => {
         }
       }
     }
-    const txt = `\n[ ✅ ] Berhasil Terhubung Ke SC Amelia-MD:v.\nTerimakasih @${jid.split`@`[0]}, Karena sudah memberikan script gratis ini.\n\n\n📑Sumber Script:\nPutraModzOfficial`
+    const txt = `\n[ ✅ ] Berhasil Terhubung Ke SC Dae Mon Re Md:v.\nTerimakasih @${jid.split`@`[0]}`
     return await conn.sendMessage(jid, { text: txt, mentions: [jid], ...options }, { quoted: fkontak, ephemeralExpiration: 86400, ...options })
   }
 }
@@ -193,11 +193,11 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = '✧━━━━━━[ *WELCOME* ]━━━━━━✧\n\n┏––––––━━━━━━━━•\n│⫹⫺ @subject\n┣━━━━━━━━┅┅┅\n│( 👋 Hallo @user)\n├[ *INTRO* ]—\n│ *Nama:* \n│ *Umur:* \n│ *Gender:*\n┗––––––━━┅┅┅\n\n––––––┅┅ *DESCRIPTION* ┅┅––––––\n@desc'
-  conn.bye = '✧━━━━━━[ *GOOD BYE* ]━━━━━━✧\nSayonara *@user* 👋( ╹▽╹ )'
+  conn.welcome = '[ *WELCOME* ]\n *@user* Jangan Lupa Baca Des'
+  conn.bye = '[ *GOOD BYE* ]\nJangan Balik Lagi Ya *@user*'
   conn.spromote = '@user sekarang admin!'
   conn.sdemote = '@user sekarang bukan admin!'
-  conn.sDesc = 'Deskripsi telah diubah ke \n@desc'
+  conn.sDesc = 'Deskripsi telah diubah'
   conn.sSubject = 'Judul grup telah diubah ke \n@subject'
   conn.sIcon = 'Icon grup telah diubah!'
   conn.sRevoke = 'Link group telah diubah ke \n@revoke'
